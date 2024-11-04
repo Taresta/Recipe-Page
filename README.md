@@ -63,4 +63,4 @@ Maybe I would continue to focus on learning how to write neat and clean code, av
 
 ## Acknowledgments
 
-I want to thank the person who believe in me. Even though I am do not know anything at all, they still encourage me to keep going. This means a lot. Thank you.
+I want to thank the person who believe in me. Even though I am do not know anything at all,a they still encourage me to keep going. This means a lot. Thank you.
