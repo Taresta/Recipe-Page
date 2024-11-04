@@ -103,6 +103,9 @@ footer {
 #nutrition-table td {
     padding: 10px 20px;
 }
+#nutrition-table td.nutritional-value {
+    color:var(--brown-800);
+}
 
 /* Section styles */
 main section {
