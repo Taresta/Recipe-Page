@@ -85,7 +85,8 @@ footer {
 }
 #preparation-list-title {
     font: var(--text-preset-4);
-    color: var(--Rose-800);
+    color: var(--rose-800);
+    margin-bottom: var(--spacing-50);
 }
 
 /* Nutrition Table Styles */
