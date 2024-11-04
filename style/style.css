@@ -1,0 +1,112 @@
+:root {
+    /* Color Variables */
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    /* Font Variables */
+    --font-primary: "Outfit";
+    --font-secondary: "Young Serif";
+    --text-preset-1: 400 36px/150% var(--font-secondary);
+    --text-preset-2: 400 32px/150% var(--font-secondary);
+    --text-preset-3: 400 16px/150% var(--font-primary);
+    --text-preset-4: 600 24px/150% var(--font-primary);
+    --text-preset-5: 700 16px/150% var(--font-primary);
+
+    /* Spacing Variables */
+    --spacing-50: 16px;
+    --spacing-100: 24px;
+    --spacing-150: 32px;
+}
+
+body {
+    background-color: var(--stone-150);
+}
+h1, p, ul {
+    margin:0;
+}
+h1 {
+    font: var(--text-preset-1);             
+}
+h2 {
+       font: var(--text-preset-2);
+       color: var(--brown-800);
+}
+p, li, #nutrition-table td{
+       font: var(--text-preset-3);
+       color: var(--stone-600);
+}
+/* Layout Styles */
+#header, #recipe {
+    background-color: var(--white);
+    width:100%;
+    padding:0;
+    margin:0;
+}
+footer {
+    background-color: var(--white);
+    font: var(--text-preset-3);
+}
+
+/* Image Styles */
+#omelette-image {
+    max-width:100%;
+}
+
+@media (min-width:476px) {
+    body {
+        padding: var(--spacing-150);
+    }
+    #header, #recipe, footer {
+        width:29.5rem;
+        margin:auto;
+    }
+    #omelette-image {
+        padding: var(--spacing-50);
+        border-radius: 1.5rem;
+    }
+    #header {
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    footer {
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+}
+/* Component Styles */
+.preparation-time {
+    background-color: var(--rose-50);
+    border-radius: var(--spacing-100);
+    padding: var(--spacing-150);
+}
+#preparation-list-title {
+    font: var(--text-preset-4);
+    color: var(--Rose-800);
+}
+
+/* Nutrition Table Styles */
+#nutrition-table {
+   width: 100%;
+   
+
+}
+#nutrition-table tr {
+    border-bottom: 1px solid var(--stone-100);
+}
+#nutrition-table tr:last-child {
+    border-bottom: none; /* No border for the last row */
+}
+#nutrition-table td {
+    padding: 10px 20px;
+}
+
+/* Section styles */
+main section {
+    padding:var(--spacing-50);
+    border-bottom: 1px solid var(--stone-100);
+}
+
