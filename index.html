@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style/style.css" />
     
     <title>Frontend Mentor | Recipe page</title>
@@ -16,13 +22,13 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="./assets/images/image-omelette.jpeg" alt="An omelette" />
-      <h1>Simple Omelette Recipe</h1>
-      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    <header id ="header">
+      <img src="./assets/images/image-omelette.jpeg" alt="An omelette" id="omelette-image"/>
+      <h1 class="p-3">Simple Omelette Recipe</h1>
+      <p class="p-3">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.
       </p>
-      <section class="preparation-time">
+      <section class="preparation-time mx-3">
         <h3>Preparation time</h3>
         <ul>
           <li><strong>Total:</strong> Approximately 10 minutes</li>
@@ -31,7 +37,7 @@
         </ul>
       </section>
     </header>
-    <main>
+    <main id="recipe">
       <section class="Ingredients">
         <h2>Ingredients</h2>
         <ul>
@@ -43,6 +49,7 @@
         </ul>
       </section>
       <section class="instructions">
+        <h2>Instructions</h2>
         <ol>
           <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
             You can add a tablespoon of water or milk for a fluffier texture.</li>
@@ -58,8 +65,9 @@
         </ol>
       </section>
       <section class="nutrition">
+        <h2>Nutrition</h2>
         <p>The table below shows nutritional values per serving without the additional fillings.</p>
-        <table>
+        <table id="nutrition-table">
           <tr>
             <td>Calories</td>
             <td class="nutritional-value">277kcal</td>
@@ -79,10 +87,10 @@
         </table>
       </section>
     </main>
-    <footer>
+    <footer class="py-3">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Paradox Shadow</a>.
       </div>
     </footer>
   </body>
